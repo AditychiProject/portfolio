@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditychi</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <!-- Style -->
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex items-center w-full absolute top-0 left-0 z-10 bg-transparent">
+      <div class="container">
+        <div class="flex justify-between items-center relative">
+          <!-- Nav Brand -->
+          <div class="px-0">
+            <a href="#hero" class="block text-xl lg:text-2xl text-primary dark:text-light font-bold py-6">Aditychi</a>
+          </div>
+          <!-- Navbar -->
+          <div class="flex items-center px-0">
+            <!-- Hamburger Menu Button -->
+            <button id="hamburger" type="button" class="block lg:hidden absolute right-0">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+            <!-- Nav Links -->
+            <nav
+              id="nav-menu"
+              class="hidden lg:block max-w-[250px] lg:max-w-full w-full absolute lg:static top-full right-4 z-[99999] bg-light lg:bg-transparent dark:bg-primary lg:dark:bg-transparent border border-slate-400 lg:border-none dark:border-light lg:dark:border-none py-4"
+            >
+              <ul class="block lg:flex">
+                <!-- Profil -->
+                <li class="group">
+                  <a href="#profil" class="navbar-links">Profil</a>
+                </li>
+                <!-- Karya -->
+                <li class="group">
+                  <a href="#karya" class="navbar-links">Karya</a>
+                </li>
+                <!-- Penghargaan -->
+                <li class="group">
+                  <a href="#penghargaan" class="navbar-links">Penghargaan</a>
+                </li>
+                <!-- Hubungi -->
+                <li class="group">
+                  <a href="#hubungi" class="navbar-links">Hubungi</a>
+                </li>
+                <!-- Dark Mode Toggle -->
+                <div class="group">
+                  <li class="flex items-center ml-6 py-4">
+                    <div class="flex">
+                      <span class="dark-mode-label mr-2">Terang</span>
+                      <input id="dark-toggle" type="checkbox" class="hidden" />
+                      <label for="dark-toggle">
+                        <div class="cursor-pointer flex items-center w-9 h-5 bg-slate-500 rounded-full p-1">
+                          <div class="toggle-circle w-4 h-4 bg-light rounded-full transition duration-300 ease-in-out"></div>
+                        </div>
+                      </label>
+                      <span class="dark-mode-label ml-2">Gelap</span>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen bg-light dark:bg-primary pt-20">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- Content -->
+          <div class="self-center w-full lg:w-1/2">
+            <p class="text-sm text-paragraph dark:text-light/70 tracking-[0.3px]">Halo semua, saya</p>
+            <h1 class="text-4xl text-primary dark:text-light font-bold mt-4 mb-2">Aditychi</h1>
+            <h2 class="text-lg lg:text-xl text-paragraph dark:text-light font-semibold">UI Designer & Programmer</h2>
+            <p class="body mt-4 mb-8">Saya adalah seorang UI Designer dan Programmer yang berdedikasi untuk menghasilkan karya UI design yang menarik dan dapat menerapkannya ke dalam program aplikasi.</p>
+            <a href="#hubungi" class="inline-block text-sm text-light tracking-[0.3px] font-semibold bg-primary hover:bg-primary/90 hover:dark:bg-light/10 border dark:border-light mb-8 px-8 py-4">Hubungi Saya</a>
+          </div>
+          <!-- Image -->
+          <div class="flex self-end justify-center order-first lg:order-last w-full lg:w-1/2 px-4 py-8">
+            <div class="blob-circle w-full lg:w-2/3 relative lg:right-0 mt-0 lg:mt-10">
+              <img src="img/hero.jpg" alt="Aditychi" class="max-w-full relative z-10 mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Profil Section -->
+    <section id="profil" class="bg-light dark:bg-primary pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- Left Column -->
+          <div class="w-full lg:w-1/2 lg:mb-10">
+            <h2 class="overlinee">Profil Saya</h2>
+            <!-- Tentang Saya -->
+            <h3 class="headlinee">Kenalan Yuk!</h3>
+            <p class="body max-w-xl mb-8">
+              Perkenalkan, nama lengkap saya adalah Aditya Athawidhahmeisa. Saya merupakan lulusan S1 Jurusan Teknik Informatika di STMIK Pontianak tahun 2023. Saat ini, saya sedang menjalani pekerjaan saya sebagai Freelancer UI Designer
+              dan Programmer.
+            </p>
+          </div>
+          <!-- Right Column -->
+          <div class="w-full lg:w-1/2">
+            <!-- Pendidikan Terakhir -->
+            <h3 class="headlinee lg:mt-10">Pendidikan Terakhir</h3>
+            <ul>
+              <li class="body list-disc ml-6 lg:ml-4 mb-8 lg:mb-0">Sarjana 1 (S1) Teknik Informatika STMIK Pontianak (2019-2023).</li>
+            </ul>
+            <!-- Pengalaman -->
+            <h3 class="headlinee lg:mt-10">Pengalaman</h3>
+            <h4 class="text-sm text-primary dark:text-light font-bold">(2022)</h4>
+            <ul>
+              <li class="body list-disc ml-6 lg:ml-4 mb-0 lg:mb-1">Melakukan studi kasus: "Perancangan Website Sekolah Menggunakan Framework Laravel Pada Sekolah Islam Muhammad Al-Fatih Pontianak.</li>
+            </ul>
+            <h4 class="text-sm text-primary dark:text-light font-bold">(2023)</h4>
+            <ul>
+              <li class="body list-disc ml-6 lg:ml-4 mb-0 lg:mb-1">Membuat Eksplorasi UI desain untuk website dan mobile app.</li>
+              <li class="body list-disc ml-6 lg:ml-4 mb-0 lg:mb-1">Mengikuti Challenge dari freecodecamp.org dan mendapatkan sertifikasi "Responsive Web Design".</li>
+              <li class="body list-disc ml-6 lg:ml-4 mb-0 lg:mb-1">Menerapkan Eksplorasi UI desain yang telah dibuat ke dalam bentuk kode program.</li>
+              <li class="body list-disc ml-6 lg:ml-4 mb-0 lg:mb-1">Mengikuti Challenge dari sololearn.com dan mendapatkan sertifikasi "Introduction to HTML".</li>
+              <li class="body list-disc ml-6 lg:ml-4 mb-0 lg:mb-1">Mengikuti Mini Bootcamp UI UX dan Website Development di myskill.id</li>
+              <li class="body list-disc ml-6 lg:ml-4 mb-8 lg:mb-0">Melakukan studi kasus: “Perancangan Website Toko Online Berbasis Framework Laravel Pada Toko Outfeed Pontianak”.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Karya Section -->
+    <section id="karya" class="bg-light dark:bg-primary pt-36 lg:py-36">
+      <div class="container">
+        <!-- Header -->
+        <div class="w-full">
+          <div class="max-w-xl lg:text-center lg:mx-auto">
+            <h2 class="overlinee">Karya</h2>
+            <h3 class="headlinee">Exploration Design</h3>
+            <p class="body mb-8 lg:mb-12">Di bawah ini merupakan karya UI design yang telah saya buat. Semoga kalian suka dengan hasilnya.</p>
+          </div>
+        </div>
+        <!-- Karya -->
+        <div class="flex flex-wrap justify-center w-full">
+          <!-- Karya 1 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/urban-threads.png" alt="Urban Threads App" class="w-full" />
+            </div>
+          </div>
+          <!-- Karya 2 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/vocabit.png" alt="VocaBit App" class="w-full" />
+            </div>
+          </div>
+          <!-- Karya 3 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/portfolio-website.png" alt="Portfolio Website" class="w-full" />
+            </div>
+          </div>
+          <!-- Karya 4 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/eskill.png" alt="Eskill App" class="w-full" />
+            </div>
+          </div>
+          <!-- Karya 5 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/choose-item.png" alt="Choose Item with Smart Animate" class="w-full" />
+            </div>
+          </div>
+          <!-- Karya 6 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/travelila-resort.png" alt="Travelila Resort App" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Penghargaan Section -->
+    <section id="penghargaan" class="bg-light dark:bg-primary pt-36 lg:py-36">
+      <div class="container">
+        <!-- Header -->
+        <div class="w-full">
+          <div class="max-w-xl lg:text-center lg:mx-auto">
+            <h2 class="overlinee">Sertifikasi</h2>
+            <h3 class="headlinee">Hasil Belajar</h3>
+            <p class="body mb-8 lg:mb-12">Di bawah ini merupakan sertifikasi UI design dan programming yang telah saya ikuti.</p>
+          </div>
+        </div>
+        <!-- Penghargaan -->
+        <div class="flex flex-wrap justify-center w-full">
+          <!-- Penghargaan 1 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/freecodecamp.png" alt="freeCodeCamp" class="w-full" />
+            </div>
+          </div>
+          <!-- Penghargaan 2 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/myskill.png" alt="MySkill" class="w-full" />
+            </div>
+          </div>
+          <!-- Penghargaan 3 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/sololearn.png" alt="Sololearn" class="w-full" />
+            </div>
+          </div>
+          <!-- Penghargaan 4 -->
+          <div class="w-full lg:w-1/3 lg:mx-3 mb-8">
+            <div class="overflow-hidden">
+              <img src="img/bwa.png" alt="BWA" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hubungi Section -->
+    <section id="hubungi" class="bg-primary pt-36">
+      <div class="container">
+        <!-- Header -->
+        <div class="w-full">
+          <div class="max-w-xl">
+            <h2 class="text-base lg:text-lg text-light/80 tracking-[0.35px] font-medium mb-4">Kontak</h2>
+            <h3 class="text-3xl text-light font-bold mb-4">Hubungi Saya</h3>
+            <p class="text-sm text-light/70 tracking-[0.3px] leading-loose mb-8">Tertarik dengan kinerja saya? Anda dapat menghubungi saya melalui sosial media di bawah ini.</p>
+          </div>
+        </div>
+        <!-- Social -->
+        <div class="pb-20">
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6285350785015/?text=Assalamu'alaikum, kak!">
+            <div class="flex align-middle mb-4">
+              <div class="inline-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 0.8)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"
+                  ></path>
+                </svg>
+              </div>
+              <span class="inline-block text-sm/8 text-light font-medium ml-2">+62 853-5078-5015</span>
+            </div></a
+          >
+          <!-- Gmail -->
+          <a href="mailto:aditychiproject@gmail.com">
+            <div class="flex align-middle mb-4">
+              <div class="inline-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 0.8)">
+                  <path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"></path>
+                </svg>
+              </div>
+              <span class="inline-block text-sm/8 text-light font-medium ml-2">aditychiproject@gmail.com</span>
+            </div></a
+          >
+          <!-- Tiktok -->
+          <a href="https://tiktok.com/@aditychi.designer?lang=in">
+            <div class="flex align-middle mb-4">
+              <div class="inline-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 0.8)">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="inline-block text-sm/8 text-light font-medium ml-2">aditychi</span>
+            </div></a
+          >
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/aditya-athawidhahmeisa-2309aa27a/">
+            <div class="flex align-middle mb-4">
+              <div class="inline-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 0.8)">
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="inline-block text-sm/8 text-light font-medium ml-2">Aditya Athawidhahmeisa</span>
+            </div></a
+          >
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/aditychi.uidesigner/">
+            <div class="flex align-middle mb-4">
+              <div class="inline-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 0.8)">
+                  <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
+                  <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                  <path
+                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="inline-block text-sm/8 text-light font-medium ml-2">aditychi.uidesigner</span>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary">
+      <div class="border-t border-light mx-6 lg:mx-80 py-4">
+        <p class="text-xs text-light text-center tracking-[0.3px] font-medium">Copyright &copy; 2024 All rights reserved by Aditychi.</p>
+      </div>
+    </footer>
+    <!-- Back to Top -->
+    <a href="#hero" class="flex justify-center items-center w-14 h-14 fixed right-6 bottom-10 z-[999] bg-primary hover:bg-primary/90 hover:dark:bg-light/10 border border-light rounded-full p-4">
+      <span class="block text-light">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+      </span>
+    </a>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

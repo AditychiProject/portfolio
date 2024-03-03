@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Navbar Fixed */
+.navbar-fixed {
+  @apply fixed z-[999] bg-light dark:bg-primary bg-opacity-70 dark:bg-opacity-50 backdrop-blur-sm;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Hamburger Menu Button */
+.hamburger-line {
+  @apply block w-[24px] h-[2px] bg-primary dark:bg-light my-1.5;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+/* Hero Image */
+.blob-circle {
+  overflow: hidden;
+  z-index: 1;
+  background: plum;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: morph 3s linear infinite;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+/* Typography */
+.navbar-links {
+  @apply flex text-sm text-primary dark:text-light tracking-[0.3px] font-medium mx-6 py-4;
+}
+
+.overlinee {
+  @apply text-base lg:text-lg text-primary/60 dark:text-light/80 tracking-[0.35px] font-medium mb-4;
+}
+
+.headlinee {
+  @apply text-3xl text-primary dark:text-light font-bold mb-4;
+}
+
+.body {
+  @apply text-sm text-paragraph dark:text-light/70 tracking-[0.3px] leading-loose;
+}
+
+/* Dark Mode */
+.dark-mode-label {
+  @apply text-sm text-primary dark:text-light tracking-[0.3px] font-medium;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}
